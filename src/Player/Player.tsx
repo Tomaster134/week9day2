@@ -13,14 +13,12 @@ const Player = () => {
   const clickEvent = () => {
     if ((game.player.name = "Dylan")) {
       console.log(game);
-      setGame({ ...game, player: { ...game.player , name: 'Tommy'} });
+      setGame({ ...game, player: {name: 'Tommy'} });
     }
-    // else if (game.player.name = "Tommy") {
-    //     console.log('not dylan')
-    //   setGame((curr) => {
-    //     return { ...curr, player: { ...curr.player, name: "Dylan" } };
-    //   });
-    // }
+    else if (game.player.name = "Tommy") {
+        console.log('not dylan')
+        setGame({ ...game, player: {name: 'Dylan'} });
+      };
   };
   return (
     <div className="player-container">
